@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Salut!</string>
+    <string name="projeto_salut">Projeto Salut!</string>
+    <string name="estou_ciente_e_desejo_continuar">Estou ciente e desejo continuar.</string>
+    <string name="comecar">Começar</string>
+    <string name="todo">TODO</string>
+
+    <string name="informacao_projeto">O projeto \"Salut!\" é referente ao COVID-19 e baseia-se em informações
+        fornecidas e divulgadas por orgãos especializados na área da saúde, entretanto nosso resultado não deve ser
+        considerado como diagnóstico.</string>
+    <string name="grupo_risco">Pessoas com diabetes, hipertensão, asma, doenças cardíacas, fumantes e idosos</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="nos_alegramos_em_saber_que_sua_sa_de_est_boa">Nos alegramos em saber que está tudo bem!</string>
+</resources>

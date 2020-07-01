@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#08DDC9</color>
+    <color name="colorPrimaryDark">#016FC6</color>
+    <color name="colorBackGround">#CCFFFA</color>
+    <color name="colorAccent">#65C0E4</color>
+    <color name="colorButton">#016FC6</color>
+    <color name="backSamu">#FBC2C2</color>
+    <color name="colorbad">#FD4040</color>
+    <color name="backSus">#B0E2F8</color>
+    <color name="colorText">#CA7800</color>
+</resources>

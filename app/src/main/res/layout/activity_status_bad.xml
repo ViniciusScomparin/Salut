@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".StatusBadActivity">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Faça uma autoavaliação do seu estado de saúde."
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Quais sintomas está sentindo?"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <CheckBox
+        android:id="@+id/checkFaltaAr"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Falta de ar"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <CheckBox
+        android:id="@+id/checkDorCorpo"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Dores no corpo"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkFaltaAr" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+    <CheckBox
+        android:id="@+id/checkTosseSeca"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Tosse seca"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkFaltaAr"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/checkFaltaAr"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkFadiga"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Fadiga"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkDorCorpo"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/checkDorCorpo" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Em caso de febre:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkDorCorpo" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <RadioButton
+            android:id="@+id/radioSemFebre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sem febre"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioFebre37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="De 37,8ºC à 39,5ºC"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioFebre39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="De 39,6ºC à 41ºC"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioFebre41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acima de 41ºC"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Há quanto tempo sente esse(s) sintoma(s)?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <RadioButton
+            android:id="@+id/radioHoje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoje"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioDoisDias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 dias"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioTresACinco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 a 5 dias"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioMaisDeSeis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mais de 6 dias"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkRisco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Faço parte do grupo de risco"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+    <Button
+        android:id="@+id/buttonContinuar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background"
+        android:onClick="criticidade"
+        android:padding="8dp"
+        android:text="Continuar"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkRisco" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
